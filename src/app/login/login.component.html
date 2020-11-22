@@ -1,0 +1,40 @@
+<div class="container d-flex justify-content-center mt-5">
+  <mat-card class="text-center">
+    <mat-card-title class="text-center">Login Form</mat-card-title>
+    <mat-card-content>
+      <!-- form -->
+      <form class="example-form" [formGroup]="loginForm">
+        <!-- email field -->
+        <mat-form-field>
+          <input matInput placeholder="Email" [formControl]="email" formControlName="email">
+
+          <mat-error *ngIf="email.hasError('email') && !email.hasError('required')">
+            Please enter a valid email address
+          </mat-error>
+          <mat-error *ngIf="email.hasError('required')">
+            Email is <strong>required</strong>
+          </mat-error>
+
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput placeholder="Enter your password" formControlName="password" [formControl]="password"
+            [type]="hide ? 'password' : 'text'">
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+          <mat-error *ngIf="password.hasError('email') && !password.hasError('required')">
+            Please enter a atleast 8 digits
+          </mat-error>
+          <mat-error *ngIf="password.hasError('required')">
+            password is <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+
+        <button mat-raised-button type="submit" (click)="loginDetails(loginForm.value)">Login</button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<!-- {{loginForm.value | json}} -->

@@ -1,0 +1,34 @@
+<p>testcodes works!</p>
+
+<div class="container">
+  <h3>Clipboard demo</h3>
+  <div>
+    <textarea rows="4" cols="50" [(ngModel)]="textValue"></textarea>
+    <button mat-icon-button cdkCopyToClipboard="{{textValue}}" lass="waves-effect waves-light btn">
+      <mat-icon>content_copy</mat-icon>
+    </button>
+  </div>
+</div>
+
+<!-- <div class="container">
+  <iframe width="640" height="360" frameborder="0"
+    src="https://mega.nz/embed/ZSg3gCoR#l-VvpVK2LnhQuqHVT5Sr2DZRVh6Namj4NJCRLxYhKZQ" allowfullscreen></iframe>
+</div> -->
+
+
+<!-- show-hide password -->
+<!-- <div class="container">
+  <div class="input-group ">
+    <input type="password" class="form-control form-control-sm" [type]="hide ? 'password': 'text'">
+    <div class="input-group-append">
+      <span class="input-group-text">
+        <i class="fas " id="heart"  [ngClass]="{'fa-eye' : !hide, 'fa-eye-slash' : hide}" (click)="testcode()"></i>
+      </span>
+    </div>
+  </div>
+</div> -->
+
+<div class="text-center">
+  <button class="btn btn-sm btn-info" (click)="open()">open</button>
+  <div id="snackbar" [ngClass]="{show: snackbar}">{{text}}</div>
+</div>

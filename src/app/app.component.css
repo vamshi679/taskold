@@ -1,0 +1,22 @@
+span{
+    padding-right: 1rem;
+}
+
+span:hover{
+    color: grey;
+}
+
+
+
+/* mat-sidenav-container{
+    height: 100%;
+}
+
+mat-sidenav-content,mat-sidenav{
+    padding: 14px;
+}
+
+mat-sidenav{
+    background-color: white;
+    width: 160px;
+} */

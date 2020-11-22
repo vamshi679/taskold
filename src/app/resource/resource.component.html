@@ -1,0 +1,438 @@
+<!-- <div class="container mt-2 mb-2"> -->
+  <!-- <h1 class="d-flex justify-content-center">Angular Material Table</h1> -->
+  <!-- <div class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource">
+
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef> No. </th>
+        <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Name </th>
+        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="year">
+        <th mat-header-cell *matHeaderCellDef> year </th>
+        <td mat-cell *matCellDef="let element"> {{element.year}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="color">
+        <th mat-header-cell *matHeaderCellDef> color </th>
+        <td mat-cell *matCellDef="let element"> {{element.color}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="pantone_value">
+        <th mat-header-cell *matHeaderCellDef> pantone_value </th>
+        <td mat-cell *matCellDef="let element"> {{element.pantone_value}} </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+    <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+  </div> -->
+  <!-- <div class="row">
+    <div class="col-lg-8">
+      <h1 class="d-flex justify-content-center">Angular Material Table</h1>
+      <div class="mat-elevation-z8">
+        <table mat-table [dataSource]="dataSource">
+
+          <ng-container matColumnDef="id">
+            <th mat-header-cell *matHeaderCellDef> No. </th>
+            <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef> Name </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="year">
+            <th mat-header-cell *matHeaderCellDef> year </th>
+            <td mat-cell *matCellDef="let element"> {{element.year}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="color">
+            <th mat-header-cell *matHeaderCellDef> color </th>
+            <td mat-cell *matCellDef="let element"> {{element.color}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="pantone_value">
+            <th mat-header-cell *matHeaderCellDef> pantone_value </th>
+            <td mat-cell *matCellDef="let element"> {{element.pantone_value}} </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+
+        <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+      </div>
+      <div class="mat-elevation-z8">
+        <table mat-table [dataSource]="dataSource">
+
+          <ng-container matColumnDef="id">
+            <th mat-header-cell *matHeaderCellDef> No. </th>
+            <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef> Name </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="year">
+            <th mat-header-cell *matHeaderCellDef> year </th>
+            <td mat-cell *matCellDef="let element"> {{element.year}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="color">
+            <th mat-header-cell *matHeaderCellDef> color </th>
+            <td mat-cell *matCellDef="let element"> {{element.color}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="pantone_value">
+            <th mat-header-cell *matHeaderCellDef> pantone_value </th>
+            <td mat-cell *matCellDef="let element"> {{element.pantone_value}} </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+
+        <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+      </div>
+      <div class="mat-elevation-z8">
+        <table mat-table [dataSource]="dataSource">
+
+          <ng-container matColumnDef="id">
+            <th mat-header-cell *matHeaderCellDef> No. </th>
+            <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef> Name </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="year">
+            <th mat-header-cell *matHeaderCellDef> year </th>
+            <td mat-cell *matCellDef="let element"> {{element.year}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="color">
+            <th mat-header-cell *matHeaderCellDef> color </th>
+            <td mat-cell *matCellDef="let element"> {{element.color}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="pantone_value">
+            <th mat-header-cell *matHeaderCellDef> pantone_value </th>
+            <td mat-cell *matCellDef="let element"> {{element.pantone_value}} </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+
+        <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+      </div>
+    </div>
+    <div class="col-lg-4 mt-5 hidden-m">
+      <div class="sticky-top osition-fixed">
+        <div class="mat-elevation-z8">
+          <table mat-table [dataSource]="dataSource">
+  
+            <ng-container matColumnDef="id">
+              <th mat-header-cell *matHeaderCellDef> No. </th>
+              <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+            </ng-container>
+  
+            <ng-container matColumnDef="name">
+              <th mat-header-cell *matHeaderCellDef> Name </th>
+              <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+            </ng-container>
+  
+            <ng-container matColumnDef="year">
+              <th mat-header-cell *matHeaderCellDef> year </th>
+              <td mat-cell *matCellDef="let element"> {{element.year}} </td>
+            </ng-container>
+  
+            <ng-container matColumnDef="color">
+              <th mat-header-cell *matHeaderCellDef> color </th>
+              <td mat-cell *matCellDef="let element"> {{element.color}} </td>
+            </ng-container>
+  
+            <ng-container matColumnDef="pantone_value">
+              <th mat-header-cell *matHeaderCellDef> pantone_value </th>
+              <td mat-cell *matCellDef="let element"> {{element.pantone_value}} </td>
+            </ng-container>
+  
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
+  
+          <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+        </div>
+      </div>
+    </div>
+  </div> -->
+<!-- </div> -->
+
+<!-- <div class="container mb-2">
+  <h1 class="d-flex justify-content-center">Angular Material Tabs</h1>
+  <mat-tab-group>
+    <mat-tab label='angular'>
+      content-1
+    </mat-tab>
+    <mat-tab label='react'>
+      content-2
+    </mat-tab>
+    <mat-tab label='veu'>
+      content-3
+    </mat-tab>
+  </mat-tab-group>
+</div> -->
+
+<!-- bootstrap 4 tabs  -->
+<!-- <div class="container">
+  <h1 class="d-flex justify-content-center">Bootstrap 4 Tabs</h1>
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+        aria-selected="true">Angular</a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+        aria-selected="false">React</a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+        aria-selected="false">Veu</a>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+      content-1
+    </div>
+    <div class="tab-pane fade show " id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      content-2
+    </div>
+    <div class="tab-pane fade show" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+      content-3
+    </div>
+  </div>
+</div> -->
+
+
+<!-- <div class="row">
+  <div class="col-md-6">
+    <h1 class="d-flex justify-content-center">Angular Material Table</h1>
+    <div class="mat-elevation-z8">
+      <table mat-table [dataSource]="dataSource">
+  
+        <ng-container matColumnDef="id">
+          <th mat-header-cell *matHeaderCellDef> No. </th>
+          <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+        </ng-container>
+  
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef> Name </th>
+          <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+  
+        <ng-container matColumnDef="year">
+          <th mat-header-cell *matHeaderCellDef> year </th>
+          <td mat-cell *matCellDef="let element"> {{element.year}} </td>
+        </ng-container>
+  
+        <ng-container matColumnDef="color">
+          <th mat-header-cell *matHeaderCellDef> color </th>
+          <td mat-cell *matCellDef="let element"> {{element.color}} </td>
+        </ng-container>
+  
+        <ng-container matColumnDef="pantone_value">
+          <th mat-header-cell *matHeaderCellDef> pantone_value </th>
+          <td mat-cell *matCellDef="let element"> {{element.pantone_value}} </td>
+        </ng-container>
+  
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+  
+      <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="affix">
+      fixed position 
+   </div>
+  </div>
+</div> -->
+
+<!-- <mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      This is the expansion title
+    </mat-panel-title>
+    <mat-panel-description>
+      This is a summary of the content
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+  <p>This is the primary content of the panel.</p>
+</mat-expansion-panel> -->
+
+<div class="container">
+  <div class="container emp-profile">
+    <form method="post">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="profile-img">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog"
+                        alt="" />
+                    <div class="file btn btn-primary">
+                        Change Photo
+                        <input type="file" name="file">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="profile-head">
+                    <h5>
+                        Kshiti Ghelani
+                    </h5>
+                    <h6>
+                        Web Developer and Designer
+                    </h6>
+                    <p class="proile-rating">RANKINGS : <span>8/10</span></p>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                aria-controls="home" aria-selected="true">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                aria-controls="profile" aria-selected="false">Timeline</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="profile-work">
+                    <p>WORK LINK</p>
+                    <a href="">Website Link</a><br />
+                    <a href="">Bootsnipp Profile</a><br />
+                    <a href="">Bootply Profile</a>
+                    <p>SKILLS</p>
+                    <a href="">Web Designer</a><br />
+                    <a href="">Web Developer</a><br />
+                    <a href="">WordPress</a><br />
+                    <a href="">WooCommerce</a><br />
+                    <a href="">PHP, .Net</a><br />
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="tab-content profile-tab" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>User Id</label>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Kshiti123</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Name</label>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Kshiti Ghelani</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Email</label>
+                            </div>
+                            <div class="col-md-6">
+                                <p>kshitighelani@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Phone</label>
+                            </div>
+                            <div class="col-md-6">
+                                <p>123 456 7890</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Profession</label>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Web Developer and Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Experience</label>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Expert</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Hourly Rate</label>
+                            </div>
+                            <div class="col-md-6">
+                                <p>10$/hr</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Total Projects</label>
+                            </div>
+                            <div class="col-md-6">
+                                <p>230</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>English Level</label>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Expert</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Availability</label>
+                            </div>
+                            <div class="col-md-6">
+                                <p>6 months</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>Your Bio</label><br />
+                                <p>Your detail description</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+</div>
